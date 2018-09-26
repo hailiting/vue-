@@ -1,0 +1,84 @@
+// 遮罩
+.shade {
+	position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46,35,78,0.5);
+  z-index: 2000;
+}
+.el-textarea__inner{
+  height:88px;
+}
+// 侧边进入动画
+.transitionRouter-enter-active,
+.transitionRouter-leave-active {
+  transition: all 1s;
+}
+
+.transitionRouter-enter,
+.transitionRouter-leave {
+  transform: translate3d(100%, 0, 0);
+}
+.cursor{
+  cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+body .el-checkbox__inner{
+  border-color: #979797;
+  background-color: #f0f0f0;
+}
+body .el-checkbox__input.is-checked .el-checkbox__inner{
+  background-color: #E43A3C;
+  border-color: #E43A3C;
+}
+body .el-checkbox__input.is-checked + .el-checkbox__label {
+  color: #E43A3C;
+}
+// 面包屑
+.el-breadcrumb{
+  height: 34px !important;
+  line-height: 34px!important;
+  font-size: 12px!important;
+  .el-breadcrumb__item:last-child{
+    .el-breadcrumb__inner{
+      font-weight: bold !important;
+    }
+  }
+}
+.el-breadcrumb__inner.is-link{
+  font-weight: normal !important;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.spicon{
+  display: inline-block;*display:inline;*zoom:1;
+  width: 24px;
+  height: 26px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background: url(../../assets/img/www/spicon.svg) no-repeat 0 0 /cover;
+}
+.inner{
+  width:1190px;
+  margin: 0 auto;
+}
+img{
+  background-color: #fff;
+}
+.hoverspan{
+  &:hover{
+    color: $mainkeycolor !important;
+  }
+}

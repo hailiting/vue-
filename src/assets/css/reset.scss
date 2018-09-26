@@ -1,0 +1,288 @@
+body {
+  height: 100%;
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+body,
+html {
+  transition: all .3s ease;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+  {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol li,
+ul li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'PingFang SC', 'Helvetica', 'Helvetica Neue', 'Arial', 'Hiragino Sans GB', 'Microsoft Yahei', \\5FAE\8F6F\96C5\9ED1, STHeiti, \\534E\6587\7EC6\9ED1, sans-serif;
+  font-size: 16px;
+}
+
+input,
+button {
+  outline: none;
+}
+
+.tl {
+  margin-left: 15px;
+}
+
+.clear:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+// ::-webkit-scrollbar{
+//   display:none;
+//   }
+textarea:focus {
+  border: 1px solid $mainkeycolor !important;
+  outline: none;
+}
+
+body {
+  .el-button--default {
+    box-shadow: none;
+    border-color: $mainkeycolor;
+    color: $mainkeycolor;
+    &:hover,
+    &:focus {
+      background-color: #FBEBEC;
+      border-color: #C30D23;
+      color: $mainkeycolor;
+    }
+  }
+  .el-button--primary {
+    box-shadow: none;
+    background-color: $mainkeycolor;
+    border-color: $mainkeycolor;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    &:focus,
+    &:hover {
+      background-color: #C30D23;
+      border-color: #C30D23;
+      color: #fff;
+    }
+  }
+  .el-button--primary.is-plain {
+    box-shadow: none;
+    background-color: #eaebfc;
+    border-color: #c5c9f6;
+    border-radius: 3px;
+    color: $auxiliarymaincolor;
+    &:hover {
+      background-color: #6f77df;
+      border-color: #7078e0;
+      color: #fff;
+    }
+    &:focus {
+      background-color: #5b64cc;
+      border-color: #5b64cc;
+      color: #fff;
+    }
+  }
+  a {
+    color: $neutralcolor3;
+    transition: all .3s ease;
+  }
+  a:hover {
+    color: #E03535;
+  }
+  .adlong {
+    margin-top: 40px;
+    height: 100px;
+    background: #d74646;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .el-form-item.is-error {
+    .el-input__inner {
+      border-color: $neutralcolord7;
+      &:focus {
+        border-color: $auxiliarymaincolor;
+      }
+    }
+  }
+  .text-description {
+    font-size: 16px;
+    color: $mainkeycolor;
+    margin-bottom: 20px;
+  }
+  .el-message-box {
+    .el-message-box__content {
+      // border-top: 1px solid #dfe4eb;
+      // border-bottom: 1px solid #dfe4eb;
+    }
+    .el-message-box__message {
+      p {
+        color: $neutralcolor9;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: PingFangSC-Regular;
+        .p1 {
+          font-size: 16px;
+          color: #2e234e;
+        }
+        .p2 {
+          height: 16px;
+          line-height: 16px;
+        }
+      }
+    } // .el-message-box__status {
+    //   font-size: 16px !important;
+    // }
+    .el-message-box__btns {
+      margin-top: 15px; // text-align: center;
+    }
+  }
+}
